@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Plan incentivos Toyota</title>
+    <link rel="icon" href="img/Favicon toyota.png">
+    <meta charset="utf8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Descripcion" content="Proyecto personal pagina web Juju">
+    <meta name="auto" content="Jonathan Molina">
+    <link rel="stylesheet" href="ccs/estilos-v13.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/494b4aac6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <p class="puntos-disponibles">Versión 13 | Tus Mil pesos disponibles: 0</p>
+        <section class="linea-superior"></section>
+        <div class="menu">
+            <div class="menu1">
+                <a href="index.html"><div class="logotipo"><img  src="img/Logo-toyota.png" alt="logotipo"></div></a>
+                <div class="foto-de-perfil"><img  src="img/foto-de-perfil.png" alt="foto-de-perfil"></div>
+                <div><p>¡Hola!</p></div>
+                <div class="catalogo"><p>Catálogo</p></div>
+            </div>
+            <div class="menu2">
+                <div class="ver-historial">
+                    <a href="#"target="_blank" id="ver-historial">Ver historial</a>
+                </div>
+                <div class="carrito-de-compra"><img src="img/carrito.png" alt="icono"> </div>
+                <div class="cerrar-cesion"><img src="img/off.png" alt="icono"> </div>
+                <span class="menu-icon"><img src="img/menu-burger.png" alt="icono"></span>
+            </div>
+        </div>
+        <section class="linea-inferior"></section>
+    </header>
+
+    <div class="banner">
+          <img src="img/Banner-toyota.jpg" alt="esto es una imagen">
+    </div>
+
+    <div class="titulo-catalogo">
+        <div class="titulo-catalogo-parte-izquierda">
+            <img src="img/carrito-2.png" alt="icono">
+            <p>Catálogo</p>
+        </div>
+        <div class="titulo-catalogo-parte-derecha">
+            <a href="#"> <img src="img/info.png" alt="icono"></a>
+        </div>
+    </div>
+
+    <form class="filtro-ordenar">
+        <select name="etiquetas" id="etiquetas">
+            <option value="Destacados">Destacados</option>
+            <option value="Menor precio">Menor precio</option>
+            <option value="Mayor precio">Mayor precio</option>
+            <option value="Ofertas">Ofertas</option>
+        </select>
+    </form>
+    
+    <div class="contenedor-productos">
+        <div class="filtro">
+            <div class="puntos-disponibles-lateral">
+                <p id="tienes-para-redimir">Tienes para redimir:</p>
+                <p id="mil-pesos">0 Mil pesos</p>
+            </div>
+            <div class="campo-buscar">
+                <img src="img/lupa.png" alt="icono">
+                <input type="sea" name="buscar" id="buscar" placeholder="Buscador de productos"/>
+            </div>
+            <div class="boton-buscar">
+                <a href="#">
+                    <img src="img/lupa-blanca.png" alt="icono">
+                    <p>Buscar</p>
+                </a>
+            </div>
+            <div class="filtro-productos">
+                <p class="Titulo-filtro">Filtrar productos entre:</p>
+                <div class="min-max">
+                    <input type="number" name="numero" id="numero-min" max="40" min="2" step="2"/>
+                    <p class="y">y</p>
+                    <input type="number" name="numero" id="numero-min" max="40" min="2" step="2"/>
+                </div>
+                <p class="mil-pesos2">Mil pesos</p>
+            </div>
+            <div class="boton-filtrar">
+                <a href="#">
+                    <img src="img/lupa-blanca.png" alt="icono">
+                    <p>Filtrar</p>
+                </a>
+            </div>
+            <div class="categorias-de-bono">
+                <form class="filtro-categorias">
+                    <select name="etiquetas" id="etiquetas">
+                        <option value="Tienda Física">Tienda Física</option>
+                        <option value="E-commerce">E-commerce</option>
+                        <option value="App">App</option>
+                        <option value="Ofertas">Ofertas</option>
+                    </select>
+                </form>
+                <a href="#">Recargas a Celular</a>
+                <form class="categorias">
+                    <select name="etiquetas" id="etiquetas">
+                        <option value="Categorias">Categorias</option>
+                        <option value="Recargas a Celular">Recargas a Celular</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <div class="card-bonos-virtuales">
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.1">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_1.jpg" alt="imagen de bono">
+                                <p class="tag-superior" id="nuevo">bono nuevo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tag" id="descuento">15% Descuento</p>
+                            <section class="separador-superior"></section>
+                            <p class="fecha-vencimiento">Fecha de vigencia: 20/06/2022</p>
+                        </div>
+                        <h1 class="titulo-bono">Bono Virtual Universal $50.000</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> Inmediata</p>
+                        </div>
+                        <a  class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">85.000</p>
+
+                            <div class="moneda-y-descuento">
+                                <p class="moneda-bono">TOYOPUNTOS</p>
+                                <section class="separador"></section>
+                                
+                                <p class="valor-original"><strike>$ 100.000</strike></p>
+                            </div>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.2">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_2.1.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                        </div>
+                        <div class="titulo">
+                            <h1 class="titulo-bono">Recarga de $5.000 Claro</h1>
+                            <!--<p class="titulo-secundario">Recarga a celular</p>-->
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos" id="termino-desactivado">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> 2 días habiles</p>
+                        </div>
+                        <a  class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">20.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual" id="bono-desactivado">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.3">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_3.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+
+                            <p class="tag" id="nuevo">Bono nuevo</p>
+                        </div>
+                        <h1 class="titulo-bono">Bono Virtual Ian Collection $20.000</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Medellín</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Fisica & Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> Inmediata</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">20.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a>
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="fila"> 
+                <div class="bono-virtual-especial" id="bono-virtual-especial">
+                    <div class="sección-detalles-bono-especial">
+                        <div class="primera-secion">
+                            <p class="tag" id="bono-estrella">Bono estrella</p>
+                        </div>
+                        <h1 class="titulo-bono" id="titulo-bono-especial">In Bite</h1>
+                        <div class="terminos" id="terminos-especiales">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> MED - BOG - CLO</p>
+                        </div>
+                        <div class="terminos" id="terminos-especiales">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong>Virtual</p>
+                        </div>
+                        <div class="terminos" id="terminos-especiales">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong>Inmediata</p>
+                        </div>
+                        <a  class="detalle-bono" id="detalle-bono-especial">Ver más detalles</a>
+                    </div>
+                    
+                    <div class="contenedor-carrusel-especial">
+                        <div class="carrusel-especial" id="carrusel-1.5"> 
+                            <img src="img/Combo-Wings-x-6-Piezas.png" id="img-producto" alt="imagen de bono">
+                            <img src="img/CARDS-ORIGINAL/CARD_5.svg" alt="imagen de bono">
+                            
+                        </div>
+                    </div>
+
+                    <div class="seccion-valor-y-agregar" id="seccion-valor-y-agregar-especial">
+                        <div class="seccion-valor">
+                            <p class="valor-bono" id="valor-bono-especial">30.000</p>
+                            <p class="moneda-bono" id="moneda-bono-especial">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar" id="seccion-agregar-especial">
+                            <div class="boton-agregar" id="boton-agregar-especial">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual" id="americanino">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.6">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_6.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                        </div>
+                        <h1 class="titulo-bono">Americanino</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong>Inmediata</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">50.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.7">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_7.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                            <p class="tag" id=“mas-redimido”>Más redimido</p>
+                        </div>
+                        <h1 class="titulo-bono">Dislicores</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos">  
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> Inmediata</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">100.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual" id="bono-desactivado">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.8">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_8.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                        </div>
+                        <h1 class="titulo-bono">Combo Corral TodoTerreno $35.000</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> MED - BOG - CLO</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong>Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> Inmediata</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">35.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.9">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_9.1.jpg" alt="imagen de bono">
+                                <img id="logotipo-xiaomi" src="img/CARDS-ORIGINAL/CARD_9.2.svg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                        </div>
+                        <h1 class="titulo-bono">Mi Robot Vacuum</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos" id="termino-desactivado">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Fisica</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> 15 días habiles</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">1.669.900</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.10">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_10.1.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                        </div>
+                        <h1 class="titulo-bono">Puntos Colombia</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Puntos de venta autorizados</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> 3 días habiles</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">100.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.11">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_11.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tag" id="descuento">20% Descuento</p>
+                            <section class="separador-superior"></section>
+                            <p class="fecha-vencimiento">Fecha de vigencia: 20/06/2022</p>
+                        </div>
+                        <h1 class="titulo-bono">Jenos Pizza</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Tulua - VVC - CTG - BAQ</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Fisica</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong>Inmediata</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">40.000</p>
+                            <div class="moneda-y-descuento">
+                                <p class="moneda-bono">TOYOPUNTOS</p>
+                                <section class="separador"></section>
+                                
+                                <p class="valor-original"><strike>$ 50.000</strike></p>
+                            </div>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual" id="bono-desactivado">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.12">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_12.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                        </div>
+                        <h1 class="titulo-bono">Totto</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> Inmediata</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">50.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.13">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_13.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                            <p class="tag" id="nuevo">Bono nuevo</p>
+                        </div>
+                        <h1 class="titulo-bono">Alkomprar</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong>Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> 3 días habiles</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">100.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.14">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_14.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                        </div>
+                        <h1 class="titulo-bono">Merqueo</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Medellín</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> Inmediata</p>
+                        </div>
+                        <a  class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">50.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual" id="bono-desactivado">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.15">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_15.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                        </div>
+                        <h1 class="titulo-bono">Tennis</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> Inmediata</p>
+                        </div>
+                        <a  class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">30.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.16">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_16.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                        </div>
+                        <h1 class="titulo-bono">Amazon US 100</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> Inmediata</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">400.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.17">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_17.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tag" id="descuento">15% Descuento</p>
+                            <section class="separador-superior"></section>
+                            <p class="fecha-vencimiento">Fecha de vigencia: 20/06/2022</p>
+                        </div>
+                        <h1 class="titulo-bono">Tostao</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> MED - BOG - CLO</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Fisica</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> Inmediata</p>
+                        </div>
+                        <a  class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">8.500.000</p>
+                            <div class="moneda-y-descuento">
+                                <p class="moneda-bono">TOYOPUNTOS</p>
+                                <section class="separador"></section>
+            
+                                <p class="valor-original"><strike>$ 10.000</strike></p>
+                            </div>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual" id="bono-desactivado">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.18">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_18.jpg" alt="imagen de bono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion" id="primera-secion-sin-info">
+
+                        </div>
+                        <h1 class="titulo-bono">Baby Fresh</h1>
+                        <div class="terminos">
+                            <img src="img/icons-cobertura-37.svg" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-tienda-40.svg" alt="icono">
+                            <p><strong>Tienda:</strong> Fisica & Virtual</p>
+                        </div>
+                        <div class="terminos">
+                            <img src="img/icons-redencion-41.svg" alt="icono">
+                            <p><strong>Tiempo de entrega:</strong> Inmediata</p>
+                        </div>
+                        <a   class="detalle-bono">Ver más detalles</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">15.000</p>
+                            <p class="moneda-bono">TOYOPUNTOS</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>   
+        </div>
+
+    </div>
+    
+</body>
+</html>

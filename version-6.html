@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Juju</title>
+    <link rel="icon" href="img/favicon.png">
+    <meta charset="utf8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Descripcion" content="Proyecto personal pagina web Juju">
+    <meta name="auto" content="Jonathan Molina">
+    <link rel="stylesheet" href="ccs/estilos-v6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/494b4aac6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <p class="puntos-disponibles">Versión 6 | Tus Mil pesos disponibles: 0</p>
+        <section class="linea-superior"></section>
+        <div class="menu">
+            <div class="menu1">
+                <a href="index.html"><div class="logotipo"><img  src="img/logo bonos express.png" alt="logotipo"></div></a>
+                <div class="foto-de-perfil"><img  src="img/foto-de-perfil.png" alt="foto-de-perfil"></div>
+                <div><p>¡Hola!</p></div>
+                <div class="catalogo"><p>Catálogo</p></div>
+            </div>
+            <div class="menu2">
+                <div class="ver-historial">
+                    <a href="#"target="_blank" id="ver-historial">Ver historial</a>
+                </div>
+                <div class="carrito-de-compra"><img src="img/carrito.png" alt="icono"> </div>
+                <div class="cerrar-cesion"><img src="img/off.png" alt="icono"> </div>
+                <span class="menu-icon"><img src="img/menu-burger.png" alt="icono"></span>
+            </div>
+        </div>
+        <section class="linea-inferior"></section>
+    </header>
+
+    <div class="banner">
+          <img src="img/Banner-principal.jpg" alt="esto es una imagen">
+    </div>
+
+    <div class="titulo-catalogo">
+        <div class="titulo-catalogo-parte-izquierda">
+            <img src="img/carrito-2.png" alt="icono">
+            <p>Catálogo</p>
+        </div>
+        <div class="titulo-catalogo-parte-derecha">
+            <a href="#"> <img src="img/info.png" alt="icono"></a>
+        </div>
+    </div>
+
+    <form class="filtro-ordenar">
+        <select name="etiquetas" id="etiquetas">
+            <option value="Destacados">Destacados</option>
+            <option value="Menor precio">Menor precio</option>
+            <option value="Mayor precio">Mayor precio</option>
+            <option value="Ofertas">Ofertas</option>
+        </select>
+    </form>
+    
+    <div class="contenedor-productos">
+        <div class="filtro">
+            <div class="puntos-disponibles-lateral">
+                <p id="tienes-para-redimir">Tienes para redimir:</p>
+                <p id="mil-pesos">0 Mil pesos</p>
+            </div>
+            <div class="campo-buscar">
+                <img src="img/lupa.png" alt="icono">
+                <input type="sea" name="buscar" id="buscar" placeholder="Buscador de productos"/>
+            </div>
+            <div class="boton-buscar">
+                <a href="#">
+                    <img src="img/lupa-blanca.png" alt="icono">
+                    <p>Buscar</p>
+                </a>
+            </div>
+            <div class="filtro-productos">
+                <p class="Titulo-filtro">Filtrar productos entre:</p>
+                <div class="min-max">
+                    <input type="number" name="numero" id="numero-min" max="40" min="2" step="2"/>
+                    <p class="y">y</p>
+                    <input type="number" name="numero" id="numero-min" max="40" min="2" step="2"/>
+                </div>
+                <p class="mil-pesos2">Mil pesos</p>
+            </div>
+            <div class="boton-filtrar">
+                <a href="#">
+                    <img src="img/lupa-blanca.png" alt="icono">
+                    <p>Filtrar</p>
+                </a>
+            </div>
+            <div class="categorias-de-bono">
+                <form class="filtro-categorias">
+                    <select name="etiquetas" id="etiquetas">
+                        <option value="Tienda Física">Tienda Física</option>
+                        <option value="E-commerce">E-commerce</option>
+                        <option value="App">App</option>
+                        <option value="Ofertas">Ofertas</option>
+                    </select>
+                </form>
+                <a href="#">Recargas a Celular</a>
+                <form class="categorias">
+                    <select name="etiquetas" id="etiquetas">
+                        <option value="Categorias">Categorias</option>
+                        <option value="Recargas a Celular">Recargas a Celular</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <div class="card-bonos-virtuales">
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.1">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_1.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.1" target="_top">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.1" target="_top">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.1">
+                            <div class="tarjeta-carrusel"  id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-1.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.1" target="_self">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.1" target="_self">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="contenedor-puntos">
+                        <a href="#carrusel-2">
+                            <i class="fa-solid fa-circle"></i>
+                        </a>
+                        <a href="#carrusel-1">
+                            <i class="fa-solid fa-circle"></i>
+                        </a>
+                    </div>-->
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">1.220 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Universal</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">500.000 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.2">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_2.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.2">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.2">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.2">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-2.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.2">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.2">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">1.510 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Rappi Prime Membresía 6 Meses</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">120 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.3">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_3.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.3">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.3">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.3">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-3.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.3">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.3">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">870 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Ian Collection</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Medellín</p>
+                        </div>
+                        <a class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">20 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.4">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_4.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.4">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.4">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.4">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-4.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.4">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.4">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">1.145 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Almacenes Exito</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">100 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.5">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_5.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.5">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.5">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.5">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-5.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.5">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.5">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                    <section class="linea-superiorr"></section>
+                    <div class="primera-secion">
+                        <p class="tipo-bono">Bono Virtual</p>
+                        <section class="separador"></section>
+                        <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                        <p class="redenciones">520 redimidos</p>
+                    </div>
+                    <h1 class="titulo-bono">In Bite</h1>
+                    <div class="cobertura">
+                        <img src="img/cobertura.png" alt="icono">
+                        <p><strong>Cobertura:</strong> MED - BOG - CAL</p>
+                    </div>
+                    <a class="detalle-bono">Ver Detalle</a>
+                    <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">30 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.6">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_6.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.6">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.6">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.6">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-6.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.6">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.6">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">946 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Americanino</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">50 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.7">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_7.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.7">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.7">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.7">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-7.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.7">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.7">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">2.535 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Dislicores</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">100 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.8">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_8.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.8">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.8">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.8">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-8.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.8">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.8">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">1.689 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Combo Corral TodoTerreno</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Med - Bog - Cal</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">35 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.9">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_9.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.9">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.9">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.9">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-9.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.9">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.9">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">486 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Karibik</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">30 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.10">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_10.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.10">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.10">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.10">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-10.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.10">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.10">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">847 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Falabella</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">100 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.11">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_11.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.11">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.11">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.11">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-11.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.11">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.11">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">224 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Jenos Pizza</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Tulua - VVC - CTG - BAQ</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">50 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.12">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_12.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.12">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.12">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.12">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-12.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.12">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.12">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">1.512 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Totto</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">50 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.13">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_13.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.13">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.13">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.13">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-13.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.13">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.13">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">1.4293 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Alkomprar</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">100 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.14">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_14.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.14">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.14">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.14">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-14.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.14>
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.14">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">725 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Merqueo</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Medellín</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">50 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.15">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_15.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.15">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.15">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.15">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-15.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.15">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.15">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">689 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Tennis</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">30 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.16">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_16.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.16">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.16">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.16">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-16.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.16">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.16">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">243 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Amazon US 100</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">400 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.17">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_17.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.17">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.17">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.17">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-17.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.17">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.17">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">1.027 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Tostao</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Med - Bog - Cal</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">10 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="bono-virtual">
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel" id="carrusel-1.18">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-1">
+                                <img src="img/CARDS-ORIGINAL/CARD_18.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-2.18">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-2.18">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carrusel" id="carrusel-2.18">
+                            <div class="tarjeta-carrusel" id="tarjeta-carrusel-2">
+                                <img src="img/CARDS-HOVER-2/HOVER-18.jpg" alt="imagen de bono">
+                            </div>
+                            <div class="flechas-carrusel">
+                                <a href="#carrusel-1.18">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="#carrusel-1.18">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sección-detalles-bono">
+                        <section class="linea-superiorr"></section>
+                        <div class="primera-secion">
+                            <p class="tipo-bono">Bono Virtual</p>
+                            <section class="separador"></section>
+                            <img src="img/icons-bonos-redimidos-38.svg" alt="icono">
+                            <p class="redenciones">574 redimidos</p>
+                        </div>
+                        <h1 class="titulo-bono">Baby Fresh</h1>
+                        <div class="cobertura">
+                            <img src="img/cobertura.png" alt="icono">
+                            <p><strong>Cobertura:</strong> Nacional</p>
+                        </div>
+                        <a  class="detalle-bono">Ver Detalle</a>
+                        <section class="linea-inferiorr"></section>
+                    </div>
+                    <section class="linea"></section>
+                    <div class="seccion-valor-y-agregar">
+                        <div class="seccion-valor">
+                            <p class="valor-bono">15 mil</p>
+                            <p class="moneda-bono">Pesos</p>
+                        </div>
+                        <div class="seccion-agregar">
+                            <div class="boton-agregar">
+                                <a >
+                                    <img src="img/carrito-2.png" alt="icono">
+                                    <p>Agregar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>   
+        </div>
+
+    </div>
+    
+</body>
+</html>

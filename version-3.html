@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Juju</title>
+    <link rel="icon" href="img/favicon.png">
+    <meta charset="utf8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Descripcion" content="Proyecto personal pagina web Juju">
+    <meta name="auto" content="Jonathan Molina">
+    <link rel="stylesheet" href="ccs/estilos-v3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p class="puntos-disponibles">Versión 3 | Tus Mil pesos disponibles: 0</p>
+        <section class="linea-superior"></section>
+        <div class="menu">
+            <div class="menu1">
+                <a href="index.html"><div class="logotipo"><img  src="img/logo bonos express.png" alt="logotipo"></div></a>
+                <div class="foto-de-perfil"><img  src="img/foto-de-perfil.png" alt="foto-de-perfil"></div>
+                <div><p>¡Hola!</p></div>
+                <div class="catalogo"><p>Catálogo</p></div>
+            </div>
+            <div class="menu2">
+                <div class="ver-historial">
+                    <a href="#"target="_blank" id="ver-historial">Ver historial</a>
+                </div>
+                <div class="carrito-de-compra"><img src="img/carrito.png" alt="icono"> </div>
+                <div class="cerrar-cesion"><img src="img/off.png" alt="icono"> </div>
+                <span class="menu-icon"><img src="img/menu-burger.png" alt="icono"></span>
+            </div>
+        </div>
+        <section class="linea-inferior"></section>
+    </header>
+
+    <div class="banner">
+          <img src="img/Banner-principal.jpg" alt="esto es una imagen">
+    </div>
+
+    <div class="titulo-catalogo">
+        <div class="titulo-catalogo-parte-izquierda">
+            <img src="img/carrito-2.png" alt="icono">
+            <p>Catálogo</p>
+        </div>
+        <div class="titulo-catalogo-parte-derecha">
+            <a href="#"> <img src="img/info.png" alt="icono"></a>
+        </div>
+    </div>
+
+    <form class="filtro-ordenar">
+        <select name="etiquetas" id="etiquetas">
+            <option value="Destacados">Destacados</option>
+            <option value="Menor precio">Menor precio</option>
+            <option value="Mayor precio">Mayor precio</option>
+            <option value="Ofertas">Ofertas</option>
+        </select>
+    </form>
+
+    <div class="contenedor-productos">
+        <div class="filtro">
+            <div class="puntos-disponibles-lateral">
+                <p id="tienes-para-redimir">Tienes para redimir:</p>
+                <p id="mil-pesos">0 Mil pesos</p>
+            </div>
+            <div class="campo-buscar">
+                <img src="img/lupa.png" alt="icono">
+                <input type="sea" name="buscar" id="buscar" placeholder="Buscador de productos"/>
+            </div>
+            <div class="boton-buscar">
+                <a href="#">
+                    <img src="img/lupa-blanca.png" alt="icono">
+                    <p>Buscar</p>
+                </a>
+            </div>
+            <div class="filtro-productos">
+                <p class="Titulo-filtro">Filtrar productos entre:</p>
+                <div class="min-max">
+                    <input type="number" name="numero" id="numero-min" max="40" min="2" step="2"/>
+                    <p class="y">y</p>
+                    <input type="number" name="numero" id="numero-min" max="40" min="2" step="2"/>
+                </div>
+                <p class="mil-pesos2">Mil pesos</p>
+            </div>
+            <div class="boton-filtrar">
+                <a href="#">
+                    <img src="img/lupa-blanca.png" alt="icono">
+                    <p>Filtrar</p>
+                </a>
+            </div>
+            <div class="categorias-de-bono">
+                <form class="filtro-categorias">
+                    <select name="etiquetas" id="etiquetas">
+                        <option value="Tienda Física">Tienda Física</option>
+                        <option value="E-commerce">E-commerce</option>
+                        <option value="App">App</option>
+                        <option value="Ofertas">Ofertas</option>
+                    </select>
+                </form>
+                <a href="#">Recargas a Celular</a>
+                <form class="categorias">
+                    <select name="etiquetas" id="etiquetas">
+                        <option value="Categorias">Categorias</option>
+                        <option value="Recargas a Celular">Recargas a Celular</option>
+                    </select>
+                </form>
+            </div>
+           
+        </div>
+        <div class="card-bonos-virtuales">
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-1.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_1.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Universal</h1>
+                    <p class="marca-bono">Marca: Universal</p>
+                    <a href="https://juju.com.co/" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">50 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="https://juju.com.co/">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-2.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_2.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Rappi Prime Membresía 6 Meses</h1>
+                    <p class="marca-bono">Marca: Rappi</p>
+                    <a href="https://juju.com.co/" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">120 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="https://juju.com.co/">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-3.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_3.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Ian Collection</h1>
+                    <p class="marca-bono">Marca: Ian Collection</p>
+                    <a href="https://juju.com.co/" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">20 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="https://juju.com.co/">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-4.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_4.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Almacenes Exito</h1>
+                    <p class="marca-bono">Marca: Exito</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">100 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-5.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_5.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual In Bite</h1>
+                    <p class="marca-bono">Marca: In Bite</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">30 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-6.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_6.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Americanino</h1>
+                    <p class="marca-bono">Marca: Americanino</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">50 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-7.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_7.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Dislicores</h1>
+                    <p class="marca-bono">Marca: Dislicores</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">100 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-8.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_8.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Combo Corral TodoTerreno</h1>
+                    <p class="marca-bono">Marca: El Corral</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">35 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-9.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_9.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Karibik</h1>
+                    <p class="marca-bono">Marca: Karibik</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">30 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-10.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_10.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Falabella</h1>
+                    <p class="marca-bono">Marca: Falabella</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">100 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-11.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_11.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Jenos Pizza</h1>
+                    <p class="marca-bono">Marca: Jenos Pizza</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">50 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-12.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_12.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Totto</h1>
+                    <p class="marca-bono">Marca: Totto</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">50 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-13.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_13.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Alkomprar</h1>
+                    <p class="marca-bono">Marca: Alkomprar</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">100 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-14.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_14.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Merqueo</h1>
+                    <p class="marca-bono">Marca: Merqueo</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">50 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-15.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_15.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Tennis</h1>
+                    <p class="marca-bono">Marca: Tennis</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">30 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-16.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_16.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Amazon US 100</h1>
+                    <p class="marca-bono">Marca: Amazon</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">400 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-17.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_17.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Tostao</h1>
+                    <p class="marca-bono">Marca: Tostao</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">10 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bono-virtual">
+                    <div class="imagen-bono">
+                        <img class="img-back" src="img/CARDS-HOVER/HOVER-18.jpg" alt="imagen de bono">
+                        <img class="img-front" src="img/CARDS-ORIGINAL/CARD_18.jpg" alt="imagen de bono">
+                    </div>
+                    <h1 class="titulo-bono">Bono Virtual Baby Fresh</h1>
+                    <p class="marca-bono">Marca: Baby Fresh</p>
+                    <a href="#" class="detalle-bono">Ver Detalle</a>
+                    <p class="valor-bono">15 Mil Pesos</p>
+                    <div class="boton-agregar">
+                        <a href="#">
+                            <img src="img/carrito-2.png" alt="icono">
+                            <p>Agregar</p>
+                        </a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+    </div>
+    
+</body>
+</html>
